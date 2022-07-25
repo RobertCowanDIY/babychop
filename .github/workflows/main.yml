@@ -1,0 +1,23 @@
+name: CI
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  Compile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main repo
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: ./Taskfile.sh install
+
+      - name: Lint
+        run: ./Taskfile.sh lint
+      
+      - name: Compile
+        run: ./Taskfile.sh compile
