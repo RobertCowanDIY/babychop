@@ -1,6 +1,7 @@
 /* 
     MiniMonster is an embedded project intended to be an upgrade to the Harbor Freight Mini Chop Saw
     https://www.harborfreight.com/2-in-mini-bench-top-cut-off-saw-62136.html
+    MiniMonster YT Video - https://youtu.be/huZRMhoT-YE
 */
 
 #include <Servo.h>
